@@ -67,13 +67,13 @@
                 </li>
 
                 <li class="nav-item ps-lg-3 pe-2">
-                <a class="nav-link" aria-current="page" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a class="nav-link social" aria-current="page" href="index.html"><i class="fa-brands fa-facebook-f"></i></a>
               </li>
               <li class="nav-item pe-2">
-                <a class="nav-link" href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a class="nav-link social" href="index.html"><i class="fa-brands fa-twitter"></i></a>
               </li>
               <li class="nav-item pe-2">
-                <a class="nav-link" href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a class="nav-link social" href="index.html"><i class="fa-brands fa-instagram"></i></a>
               </li>
               </ul>
             </div>
@@ -145,7 +145,7 @@
           <div class="title text-center"> <h6>
             Who We Are
           </h6>
-          <p>We are an innovative company. We develop and design <span>websites</span> for <br>
+          <p>We are an innovative company. We develop and design <span class="" id="typed">websites</span> for <br>
 costumers around the world. Our clients are some of the most forward-looking companies in the world.</p>
         </div>
         <div class="About-button text-center">
@@ -153,6 +153,7 @@ costumers around the world. Our clients are some of the most forward-looking com
         </div>
         </div>
       </div>
+      <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script
     </section>
 
       <!-- Creative Team -->
@@ -495,6 +496,20 @@ Perfect Layout</h4>
         </div>
       </div>
     </footer>
+    
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+    const typed = new Typed('#typed', {
+      strings: [
+        'websites',
+        'softwares',
+        'apps'
+      ],
+      typeSpeed: 20,     // typing speed in ms
+      backSpeed: 50,     // backspacing speed in ms
+      backDelay: 1000,   // pause before deleting
+      loop: true         // repeat endlessly
+    });
+  </script>
   </body>
 </html>

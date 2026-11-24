@@ -25,6 +25,12 @@ nav .navbar-nav .nav-link.active {
 nav .navbar-nav .nav-link:hover {
   color: RGB(120, 120, 120);
 }
+nav .social i {
+  transition: all 0.5s;
+}
+nav .social:hover i {
+  color: RGB(120, 120, 120);
+}
 /* header */
 header {
   height: 100vh;
@@ -140,6 +146,7 @@ header .second-pic .text h3 {
 }
 .About .title span {
   color: #00d5ee;
+  font-weight: 400;
 }
 .About .About-button {
   padding-top: 25px;
