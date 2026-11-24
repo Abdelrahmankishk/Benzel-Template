@@ -1,5 +1,9 @@
+:root {
+  --accent: #00c2db;
+  --accent-dark: #00a7bd;
+}
 .w-90 {
-  width: 90%;
+  width: 80%;
 }
 /* Navbar */
 .NAVBAR {
@@ -422,6 +426,77 @@ header .nextBtn:hover::before {
   color: #fff;
   background-color: #00d5ee;
   transform: translateY(-1px);
+}
+.pricing-card {
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.06);
+}
+
+.plan-name,
+.price,
+.badge,
+.btn {
+  font-family: "Poppins", sans-serif;
+}
+
+.plan-name {
+  color: #1c1c1c;
+}
+
+.price {
+  color: #212121;
+}
+
+.pricing-card hr {
+  color: #e6e6e6;
+  opacity: 1;
+}
+
+.features li {
+  color: #707070;
+  font-size: 1.2rem;
+  padding-block: 0.5rem;
+}
+
+.badge {
+  background-color: var(--accent);
+  color: #fff;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  padding: 0.55em 1em;
+}
+
+.btn-accent {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: var(--accent);
+  --bs-btn-border-color: var(--accent);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: var(--accent-dark);
+  --bs-btn-hover-border-color: var(--accent-dark);
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: var(--accent-dark);
+  --bs-btn-active-border-color: var(--accent-dark);
+  --bs-btn-focus-shadow-rgb: 0, 194, 219;
+  --bs-btn-padding-x: 1.3rem;
+  --bs-btn-padding-y: 0.85rem;
+  --bs-btn-font-size: 0.9rem;
+  --bs-btn-font-weight: 600;
+  --bs-btn-border-radius: 0.3rem;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
+/* Featured (Gold) card */
+.pricing-featured .price,
+.pricing-featured .price span {
+  color: var(--accent);
+}
+
+@media (min-width: 1200px) {
+  .pricing-featured {
+    position: relative;
+    z-index: 1;
+    transform: scale(1.08);
+  }
 }
 
 /* Happy Cutomers */
