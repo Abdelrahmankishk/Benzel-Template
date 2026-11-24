@@ -413,13 +413,6 @@ header .nextBtn:hover::before {
   color: #ffffff;
 }
 .cheap .cards .card .btn-cheap {
-  color: #ffffff;
-  font-family: "Poppins", sans-serif;
-  font-size: 12px;
-  line-height: 40px;
-  font-weight: 600;
-  background-color: #00c3da;
-  padding: 0 16px;
   transition: all 0.3s;
 }
 .cheap .cards .card .btn-cheap:hover {
@@ -573,7 +566,7 @@ header .nextBtn:hover::before {
 /* Get In Touch */
 
 .GetInTouch .row {
-  height: 135vh;
+  height: 116.5vh;
   overflow: hidden;
 }
 iframe {
@@ -619,6 +612,7 @@ iframe {
 .GetInTouch input:focus,
 .GetInTouch textarea:focus {
   border-color: #000000;
+  border: 0.5px;
   box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.7);
 }
 .GetInTouch label {
