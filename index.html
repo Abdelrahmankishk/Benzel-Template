@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
 
     <link rel="stylesheet" href="styles/bootstrap.min.css" />
     <link rel="stylesheet" href="styles/styles.css" />
-  <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-/>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
@@ -22,7 +22,7 @@
       <div class="container ">
         <nav class="navbar navbar-expand-lg bg-white">
           <div class="container-fluid ">
-            <a class="navbar-brand ps-5" href="#"
+            <a class="navbar-brand ps-5" href="#Home"
               ><img src="img/logo-dark.png" class="" alt=""
             /></a>
             <button
@@ -83,15 +83,17 @@
     </nav>
 
         <!-- header -->
-    <header id="Home">
-      <div id="carouselExampleIndicators" class="carousel slide position-relative">
+    <header id="Home" class="pt-4">
+      <div id="HeaderCarosel" class="carousel slide position-relative">
   <div class="carousel-indicators">
-    <button  type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button  type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button  type="button" data-bs-target="#HeaderCarosel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button  type="button" data-bs-target="#HeaderCarosel" data-bs-slide-to="1" aria-label="Slide 2"></button>
   </div>
   <div class="carousel-inner">
-    <div class="carousel-item active first-pic ">
+    
+    <div class="carousel-item active first-pic position-relative ">
       <img src="img/bg-image-28.jpg" class=" w-100" alt="...">
+      <div class="overlay"></div>
       <div class="layout">
         <div class="text text-center position-absolute">
         <h1 >Get Awesome.</h1>
@@ -100,19 +102,20 @@
         <button class="btn left-btn ">Read More</button>
         <button class="btn right-btn">conact</button>
       </div>
-      
       </div>
+      
       </div>
       
     </div>
     <div class="carousel-item second-pic">
       <img src="img/bg-image-29.jpg" class=" w-100" alt="...">
+      <div class="overlay"></div>
       <div class="layout">
         <div class="text text-center position-absolute">
         <h1>Create With Bezel.</h1>
       <h3 class="pb-2">We help ambigous companies create new value</h3>
       <div class="buttons">
-        <button class="btn left-btn">Hire Us</button>
+        <button class="btn left-btn ">Hire Us</button>
         <button class="btn right-btn">Services</button>
       </div>
       </div>
@@ -121,15 +124,15 @@
 
   </div>
 
-</div>
-    <div class="leftDiv">
-      <button class=" left position-absolute" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-    <div><i class="fa-solid fa-arrow-left"></i></div>
+
+
+  <button class="carousel-control-prev prevBtn " type="button" data-bs-target="#HeaderCarosel" data-bs-slide="prev">
+    <i class="fa-solid fa-arrow-left-long"></i>
+    <span class="visually-hidden">Previous</span>
   </button>
-    </div>
-  <div class="rightDiv">
-    <button class=" right position-absolute" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-    <div><i class="fa-solid fa-arrow-right"></i></div>
+  <button class="carousel-control-next nextBtn " type="button" data-bs-target="#HeaderCarosel" data-bs-slide="next">
+    <i class="fa-solid fa-arrow-right-long"></i>
+    <span class="visually-hidden">Next</span>
   </button>
   </div>
     </header>

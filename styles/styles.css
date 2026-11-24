@@ -19,7 +19,12 @@
 .NAVBAR img {
   width: 90px;
 }
-
+nav .navbar-nav .nav-link.active {
+  color: RGB(120, 120, 120);
+}
+nav .navbar-nav .nav-link:hover {
+  color: RGB(120, 120, 120);
+}
 /* header */
 header {
   height: 100vh;
@@ -54,6 +59,14 @@ header .left i {
 header .first-pic .text {
   top: 35%;
   left: 26%;
+}
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 header .second-pic .text {
   top: 35%;
@@ -146,7 +159,47 @@ header .second-pic .text h3 {
   border-color: #1f1f1f;
   color: #fff;
 }
-
+header .prevBtn {
+  width: 50px;
+  bottom: 0;
+  height: 50px;
+  top: 47%;
+  transform: translateY(-50%);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-left: 0;
+}
+header .nextBtn {
+  width: 50px;
+  bottom: 0;
+  height: 50px;
+  top: 54%;
+  left: 0;
+  transform: translateY(-50%);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-left: 0;
+}
+header .prevBtn::before,
+header .nextBtn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 50px;
+  width: 0%;
+  background-color: #fff;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  z-index: -1;
+}
+header .prevBtn:hover i,
+header .nextBtn:hover i {
+  color: #000000;
+  transition: all 0.5s;
+}
+header .prevBtn:hover::before,
+header .nextBtn:hover::before {
+  width: 100%;
+}
 /* Creative Team */
 .creative {
   padding: 110px 0;
